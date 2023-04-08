@@ -1,0 +1,28 @@
+GET http://localhost:5000/masyarakat
+###
+GET http://localhost:5000/masyarakat/1
+###
+POST  http://localhost:5000/masyarakat
+Content-Type: application/json
+
+{
+    "nik" : "255069603",
+    "nama" : ".Ken",
+    "username" : "Jeka",
+    "password" : "Jeka",
+    "telp" : "08557680585"
+}
+
+###
+PATCH   http://localhost:5000/masyarakat/1
+Content-Type: application/json
+
+{
+    "nik" : "255069603",
+    "nama" : ".Ryo",
+    "username" : "Jeka",
+    "password" : "Jeka",
+    "telp" : "08557680585"
+}
+###
+DELETE http://localhost:5000/masyarakat/1
